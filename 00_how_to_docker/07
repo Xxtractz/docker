@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-docker inspect -f '{{ .NetworkSettings.IPAddress }}' overlord
-=======
-docker inspect -f '{{.Name}} - {{.NetworkSettings.IPAddress }}' overlord
->>>>>>> e3f2d7e675771ada165b1acbc677782d24127820
+docker inspect -f '{{.NetworkSettings.IPAddress }}' overlord

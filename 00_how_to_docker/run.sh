@@ -1,1 +1,1 @@
-docker inspect -f '{{ .NetworkSettings.IPAddress }}' overlord
+docker run -it --rm alpine /bin/sh
