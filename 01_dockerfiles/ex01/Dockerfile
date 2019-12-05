@@ -1,4 +1,4 @@
-FROM debian
+FROM debian:jessie
 
 RUN adduser --disabled-password --gecos "" teamspeak
 RUN mkdir /opt/teamspeak
@@ -17,3 +17,6 @@ EXPOSE 10011
 ENV TS3SERVER_LICENSE=accept
 WORKDIR /opt/teamspeak
 ENTRYPOINT sh ts3server_minimal_runscript.sh
+
+#  docker run -it -p 9987:9987/udp -p 10011:1011 -p 30033:3033 debian
+# ./ts3server_startscript.sh start
